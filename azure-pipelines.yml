@@ -7,17 +7,18 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-16.04'
 
 steps:
 
 - task: NodeAndNpmTool@1
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '6.x'
 
 - task: Npm@1
   inputs:
     command: 'install'
+    verbose: true
     customRegistry: 'useFeed'
     customFeed: '2854bf63-1ab7-4675-ad53-91763e1a782e'
 
