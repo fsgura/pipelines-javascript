@@ -17,7 +17,7 @@ steps:
 
 - task: Npm@1
   inputs:
-    command: 'custom'
+    command: 'install'
     customRegistry: 'useFeed'
     customFeed: '2854bf63-1ab7-4675-ad53-91763e1a782e'
 
